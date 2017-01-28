@@ -8,56 +8,61 @@ Makes json all pretty-like.
 
 Installation requires [conscript][cs]
 
-    cs softprops/pj
-    
+```
+cs xuwei-k/pj
+```
+
 ### usage
 
 Formatting piped data with curl (discarding stderr), use empty `--` flag
 
-    curl 'http://api.tea.io/time' 2>/dev/null | pj --
-    {
-      "tea_time": true
-    }
+```
+curl 'http://api.tea.io/time' 2>/dev/null | pj --
+{
+  "tea_time": true
+}
+```
     
 Formatting json from file and writing to another.
 
-    pj -f path/to/in.json -o path/to/out.json
+```
+pj -f path/to/in.json -o path/to/out.json
+```
     
 Formatting inline json
 
-    pj -j '{"oh":"la,la","datas":[1,2,3,4],"objects":{"waka":"waka"}}'
+```
+pj -j '{"oh":"la,la","datas":[1,2,3,4],"objects":{"waka":"waka"}}'
+```
     
 Getting help
 
-    pj -h
+```
+pj -h
+```
 
 ## as a library
 
 ### install
 
-Install using [ls][ls]
-
-    ls-install pj
-
-Install by hand
-
-    libraryDependencies += "me.lessis" %% "pj" % "0.1.0"
+```scala
+libraryDependencies += "com.github.xuwei-k" %% "pj" % "0.1.1"
+```
 
 ### usage
 
-    val raw = """{"oh":"la,la","datas":[1,2,3,4],"objects":{"waka":"waka"}}"""
-    println(pj.Printer(raw))
-    {
-      "oh" : "la,la",
-      "datas" : [ 1, 2, 3, 4 ],
-      "objects" : {
-        "waka" : "waka"
-      }
-    }
-    
+```
+val raw = """{"oh":"la,la","datas":[1,2,3,4],"objects":{"waka":"waka"}}"""
+println(pj.Printer(raw))
+{
+  "oh" : "la,la",
+  "datas" : [ 1, 2, 3, 4 ],
+  "objects" : {
+    "waka" : "waka"
+  }
+}
+```
 
-Doug Tangren (softprops) 2012
+Doug Tangren (softprops), Kenji Yoshida (xuwei-k) 2012 -
 
-[cs]: https://github.com/n8han/conscript#readme
-[ls]: http://ls.implicit.ly/
-
+[cs]: https://github.com/foundweekends/conscript#readme

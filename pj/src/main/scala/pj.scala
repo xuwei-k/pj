@@ -3,10 +3,10 @@ package pj
 object Printer {
   import java.io.{ InputStream => IN, OutputStream => OUT,
                   Reader, Writer, StringWriter }
-  import org.codehaus.jackson.{
+  import com.fasterxml.jackson.core.{
     JsonFactory, JsonGenerator, JsonParser,
     JsonParseException }
-  import org.codehaus.jackson.util.DefaultPrettyPrinter
+  import com.fasterxml.jackson.core.util.DefaultPrettyPrinter
 
   /** Prints formated json from a String */
   def apply(in: String): Either[String, String]  =

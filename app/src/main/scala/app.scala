@@ -34,7 +34,7 @@ object App {
     help: Boolean = false
   )
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val exit = run(args)
     System.exit(exit)
   }
