@@ -3,7 +3,7 @@ package pj
 object App {
   import java.io.{ File, InputStream, OutputStream,
                   FileReader, FileWriter, StringReader, PrintWriter }
-  val Help = """
+  val Help = s"""
   |    pj - a pretty printer for json
   | 
   |DESCRIPTION
@@ -25,7 +25,7 @@ object App {
   |    -o, --out
   |        Path to target output file
   | 
-  | pj 0.1.0""".stripMargin
+  | pj ${PjBuildInfo.version}""".stripMargin
 
   case class Arguments(
     in: Option[File] = None,
