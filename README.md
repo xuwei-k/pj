@@ -1,5 +1,9 @@
 # pj
 
+[![Build Status](https://travis-ci.org/xuwei-k/pj.svg?branch=master)](https://travis-ci.org/xuwei-k/pj)
+[![pj javadoc](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12.svg?label=pj javadoc)](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12/pj/index.html)
+[![pj-app javadoc](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12.svg?label=pj-app javadoc)](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12/pj/index.html)
+
 Makes json all pretty-like.
 
 ## as a conscript app
