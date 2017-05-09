@@ -48,7 +48,7 @@ val commonSettings = Seq(
   organization := "com.github.xuwei-k",
   licenses := Seq("MIT" -> url(s"https://github.com/xuwei-k/pj/blob/${tagOrHash.value}/LICENSE")),
   homepage := some(url("https://github.com/xuwei-k/pj/#readme")),
-  crossScalaVersions := Seq("2.10.6", "2.11.8", Scala212),
+  crossScalaVersions := Seq("2.10.6", "2.11.11", Scala212),
   releaseCrossBuild := true,
   releaseProcess := Seq[ReleaseStep](
     checkSnapshotDependencies,
