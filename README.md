@@ -1,8 +1,8 @@
 # pj
 
 [![Build Status](https://travis-ci.org/xuwei-k/pj.svg?branch=master)](https://travis-ci.org/xuwei-k/pj)
-[![pj javadoc](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12.svg?label=pj%20javadoc)](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12/pj/index.html)
-[![pj-app javadoc](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12.svg?label=pj-app%20javadoc)](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12/pj/index.html)
+[![pj javadoc](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12.svg?label=pj%20javadoc)](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12/pj/index.html?javadocio=true)
+[![pj-app javadoc](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12.svg?label=pj-app%20javadoc)](http://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12/pj/index.html?javadocio=true)
 
 Makes json all pretty-like.
 
