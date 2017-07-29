@@ -1,6 +1,6 @@
 import sbtrelease.ReleaseStateTransformations._
 
-val Scala212 = "2.12.1"
+val Scala212 = "2.12.3"
 
 val updateLaunchconfig = TaskKey[File]("updateLaunchconfig")
 
