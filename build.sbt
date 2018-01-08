@@ -19,7 +19,7 @@ val tagOrHash = Def.setting{
 }
 
 def gitHash(): String =
-  sys.process.Process("git rev-parse HEAD").lines_!.head
+  sys.process.Process("git rev-parse HEAD").lineStream_!.head
 
 val unusedWarnings = (
   "-Ywarn-unused" ::
