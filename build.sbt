@@ -1,5 +1,12 @@
 import sbtrelease.ReleaseStateTransformations._
 
+publishTo := Some(
+  if (isSnapshot.value)
+    Opts.resolver.sonatypeSnapshots
+  else
+    Opts.resolver.sonatypeStaging
+)
+
 val Scala212 = "2.12.3"
 
 val updateLaunchconfig = TaskKey[File]("updateLaunchconfig")
