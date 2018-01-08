@@ -7,7 +7,7 @@ publishTo := Some(
     Opts.resolver.sonatypeStaging
 )
 
-val Scala212 = "2.12.3"
+val Scala212 = "2.12.4"
 
 val updateLaunchconfig = TaskKey[File]("updateLaunchconfig")
 
@@ -55,7 +55,7 @@ val commonSettings = Seq(
   organization := "com.github.xuwei-k",
   licenses := Seq("MIT" -> url(s"https://github.com/xuwei-k/pj/blob/${tagOrHash.value}/LICENSE")),
   homepage := some(url("https://github.com/xuwei-k/pj/#readme")),
-  crossScalaVersions := Seq("2.10.6", "2.11.11", Scala212),
+  crossScalaVersions := Seq("2.10.7", "2.11.12", Scala212),
   releaseCrossBuild := true,
   releaseProcess := Seq[ReleaseStep](
     checkSnapshotDependencies,
