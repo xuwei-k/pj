@@ -22,8 +22,7 @@ def gitHash(): String =
   sys.process.Process("git rev-parse HEAD").lineStream_!.head
 
 val unusedWarnings = (
-  "-Ywarn-unused" ::
-  "-Ywarn-unused-import" ::
+  "-Ywarn-unused:imports" ::
   Nil
 )
 
@@ -33,15 +32,13 @@ val commonSettings = Seq(
     "-deprecation" ::
     "-unchecked" ::
     "-Xlint" ::
-    "-Xfuture" ::
     "-language:existentials" ::
     "-language:higherKinds" ::
     "-language:implicitConversions" ::
-    "-Yno-adapted-args" ::
     Nil
   ),
   scalacOptions ++= PartialFunction.condOpt(CrossVersion.partialVersion(scalaVersion.value)){
-    case Some((2, v)) if v >= 11 => unusedWarnings
+    case Some((2, v)) if v >= 12 => unusedWarnings
   }.toList.flatten,
   scalacOptions in (Compile, doc) ++= {
     val tag = tagOrHash.value
@@ -55,7 +52,7 @@ val commonSettings = Seq(
   organization := "com.github.xuwei-k",
   licenses := Seq("MIT" -> url(s"https://github.com/xuwei-k/pj/blob/${tagOrHash.value}/LICENSE")),
   homepage := some(url("https://github.com/xuwei-k/pj/#readme")),
-  crossScalaVersions := Seq("2.10.7", "2.11.12", Scala212),
+  crossScalaVersions := Seq("2.11.12", Scala212, "2.13.0"),
   releaseCrossBuild := true,
   releaseProcess := Seq[ReleaseStep](
     checkSnapshotDependencies,
