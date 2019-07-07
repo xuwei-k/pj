@@ -1,6 +1,6 @@
 import sbtrelease.ReleaseStateTransformations._
 
-publishTo := Some(
+publishTo in ThisBuild := Some(
   if (isSnapshot.value)
     Opts.resolver.sonatypeSnapshots
   else
