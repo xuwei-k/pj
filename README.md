@@ -1,6 +1,5 @@
 # pj
 
-[![Build Status](https://travis-ci.com/xuwei-k/pj.svg?branch=master)](https://travis-ci.com/xuwei-k/pj)
 [![pj javadoc](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12.svg?label=pj%20javadoc)](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12/pj/index.html?javadocio=true)
 [![pj-app javadoc](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12.svg?label=pj-app%20javadoc)](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12/pj/index.html?javadocio=true)
 
