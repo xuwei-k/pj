@@ -123,7 +123,7 @@ lazy val root = Project(
 lazy val pj = Project("pj", file("pj")).settings(
   commonSettings,
   name := "pj",
-  libraryDependencies += "com.fasterxml.jackson.core" % "jackson-core" % "2.11.3",
+  libraryDependencies += "com.fasterxml.jackson.core" % "jackson-core" % "2.12.0",
   buildInfoKeys := Seq[BuildInfoKey](name, version, scalaVersion, sbtVersion),
   buildInfoObject := "PjBuildInfo",
   buildInfoPackage := "pj",
