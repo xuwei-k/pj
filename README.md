@@ -1,8 +1,5 @@
 # pj
 
-[![pj javadoc](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12.svg?label=pj%20javadoc)](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj_2.12/pj/index.html?javadocio=true)
-[![pj-app javadoc](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12.svg?label=pj-app%20javadoc)](https://javadoc-badge.appspot.com/com.github.xuwei-k/pj-app_2.12/pj/index.html?javadocio=true)
-
 Makes json all pretty-like.
 
 ## as a conscript app
