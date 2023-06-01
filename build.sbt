@@ -7,7 +7,7 @@ publishTo in ThisBuild := Some(
     Opts.resolver.sonatypeStaging
 )
 
-val Scala212 = "2.12.17"
+val Scala212 = "2.12.18"
 
 val updateLaunchconfig = TaskKey[File]("updateLaunchconfig")
 
